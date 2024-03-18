@@ -1,0 +1,53 @@
+@use "../../scss/abstracts/" as *;
+
+.topnav {
+  @include flex(center, space-between);
+  margin-bottom: $spacing;
+
+  @include tablet {
+    margin-bottom: $mobileSpacing;
+  }
+  // .active-status {
+  //   position: absolute;
+  //   left: 20%;
+  //   display: flex;
+  //   flex-direction: row;
+  //   align-items: center;
+  //   gap: 15px;
+  // }
+  // .active {
+  //   color: rgba(0, 128, 0, 0.671);
+  // }
+  // .non-active {
+  //   color: rgba(255, 0, 0, 0.671);
+  // }
+
+  .buttons {
+    position: absolute;
+    right: 10%;
+    top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.sidebar-toggle {
+  --size: 40px;
+  width: var(--size);
+  height: var(--size);
+  @include flex(center, center);
+  cursor: pointer;
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+
+  i {
+    font-size: 3rem;
+    color: $mainColor;
+  }
+}
