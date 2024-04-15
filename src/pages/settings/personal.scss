@@ -1,0 +1,41 @@
+.personal{
+    width: 100%;
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    
+    .body-personal{
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        input{
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: rgba(128, 128, 128, 0.158);
+            font-size: 15px;
+        }
+        .top{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+        .bottom{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20%;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+}
