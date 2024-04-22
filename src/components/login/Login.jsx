@@ -10,7 +10,7 @@ function Login() {
   const loginUser = async (event) => {
     event.preventDefault()
 
-    const response = await fetch('http://192.168.0.100:4000/sensor/login', {
+    const response = await fetch('http://localhost:4000/sensor/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

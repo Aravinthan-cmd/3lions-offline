@@ -162,8 +162,6 @@ const Nano = () => {
     setEndDate(epochTimeSeconds);
   };
 
-  console.log("symbol ", data);
-
   return (
     <div className="nano">
       <div className="box">
